@@ -25,7 +25,7 @@ function solution(arr) {
 //     return arr.length !== 1 ? arr.filter(i => i !== min) : [-1]
 // }
 
-// 다른사람의 풀이 2 - reduce와 filter이용
+// 다른사람의 풀이 3 - reduce와 filter이용
 // function solution(arr) {
 //     var min = arr.reduce((p, c) => Math.min(p,c))
 //     var r = arr.filter(v => v != min);
