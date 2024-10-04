@@ -3,7 +3,6 @@ function solution(n, edge) {
     .fill()
     .map(() => []);
   const distance = Array(n).fill(Infinity);
-  const visited = Array(n).fill(false);
 
   edge.forEach(([a, b]) => {
     map[a - 1].push(b - 1);
@@ -15,7 +14,6 @@ function solution(n, edge) {
 
   while (queue.length) {
     let v = queue.shift();
-    visited[v] = true;
 
     map[v].forEach((end) => {
       if (distance[end] > distance[v] + 1) {
